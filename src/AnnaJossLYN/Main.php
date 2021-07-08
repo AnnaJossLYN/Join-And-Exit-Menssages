@@ -4,6 +4,7 @@ namespace AnnaJossLYN;
 
 use pocketmine\plugin\PluginBase as PB;
 use pocketmine\event\Listener as L;
+use pocketmine\utils\Config;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerQuitEvent;
 
@@ -16,12 +17,12 @@ class Main extends PB implements L {
 	
 	public function onJoin(PlayerJoinEvent $event){
 		$player = $event->getPlayer();
-		$event->setJoinMessage($this->getConfig()->get("JoinMessage"));
+		$event->setJoinMessage($msg);
 	}
 	
 	public function onExit(PlayerQuitEvent $event){
 		$player = $event->getPlayer();
-		$event->setQuitMessage($this->getConfig()->get("ExitMessage"));
+		$event->setQuitMessage($msg);
 	}
 	
 }
