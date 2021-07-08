@@ -19,14 +19,14 @@ class Main extends PB implements L {
 	public function onJoin(PlayerJoinEvent $event){
 		$player = $event->getPlayer();
                 $name->getName();     
-                $msg = $config->get("JoinMessage"));
+                $msg = $this->getConfig()->get("JoinMessage");
 		$event->setJoinMessage($msg);
 	}
 	
 	public function onExit(PlayerQuitEvent $event){
 		$player = $event->getPlayer();
                 $name->getName();
-                $msg = $config->get("ExitMessage"));
+                $msg = $msg = $this->getConfig()->get("ExitMessage");
 		$event->setQuitMessage($msg);
 	}
 	
