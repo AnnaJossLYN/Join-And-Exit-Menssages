@@ -18,11 +18,15 @@ class Main extends PB implements L {
 	
 	public function onJoin(PlayerJoinEvent $event){
 		$player = $event->getPlayer();
+                $name->getName();     
+                $msg
 		$event->setJoinMessage($msg);
 	}
 	
 	public function onExit(PlayerQuitEvent $event){
 		$player = $event->getPlayer();
+                $name->getName();
+                $msg = 
 		$event->setQuitMessage($msg);
 	}
 	
