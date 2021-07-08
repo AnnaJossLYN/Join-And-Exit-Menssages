@@ -11,8 +11,9 @@ use pocketmine\event\player\PlayerQuitEvent;
 class Main extends PB implements L {
 	
 	public function onEnable(){
-		$config = new Config($this->getDataFolder() . "config.yml", Config::YAML);
-    $this->saveResource("config.yml");
+            $config = new Config($this->getDataFolder() . "config.yml", Config::YAML);
+            $this->saveResource("config.yml");
+            $this->getServer()->getPluginManager()->registerEvents($this, $this);
 	}
 	
 	public function onJoin(PlayerJoinEvent $event){
