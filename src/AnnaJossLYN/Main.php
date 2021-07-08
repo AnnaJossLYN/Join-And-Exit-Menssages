@@ -26,7 +26,7 @@ class Main extends PB implements L {
 	public function onExit(PlayerQuitEvent $event){
 		$player = $event->getPlayer();
                 $name->getName();
-                $msg = $msg = $this->getConfig()->get("ExitMessage");
+                $msg = $this->getConfig()->get("ExitMessage");
 		$event->setQuitMessage($msg);
 	}
 	
