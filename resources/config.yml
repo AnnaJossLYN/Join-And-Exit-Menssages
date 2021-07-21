@@ -1,2 +1,2 @@
-JoinMessage: "v1"
-ExitMessage: "v1"
+message_join: "{player} has joined !"
+message_quit: "{player} has quit !"
